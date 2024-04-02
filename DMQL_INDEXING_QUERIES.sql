@@ -1,7 +1,7 @@
 /* Executing queries without indexing */
 
 /* 1. Displaying the columns extracted by using multiple joins to join various columns */
-/* Query execution time  = 00:00:08:822 (6 seconds, 822 msec) (1sec- 1000ms) */
+/* Query execution time  = 00:00:08:822 (8 seconds, 822 msec) (1sec- 1000ms) */
 SELECT "Accident"."AccidentID", "Accident"."Severity", "Weather"."Temperature(F)", "Feature"."Amenity"
 FROM "Accident" 
 INNER JOIN "Startlocation" ON "Accident"."AccidentID" = "Startlocation"."AccidentID"
